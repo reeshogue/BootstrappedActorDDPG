@@ -1,4 +1,7 @@
-from net import ActorNet, CriticNet
+#TODO: I know this technically isn't DDPG because DDPG has target networks...
+#TODO: Get a gym benchmark up and running. Don't just test it on one thing...
+
+
 from collections import deque
 import random
 import torch
