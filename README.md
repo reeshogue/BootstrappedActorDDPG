@@ -1,2 +1,2 @@
 # BootstrappedActorDDPG
-BADDPG
+BADDPG is an RL algorithm inspired by Adaptive Computation Time (https://arxiv.org/abs/1603.08983) and Bootstrap Your Own Latent (https://arxiv.org/abs/2006.07733). The ideas presented are simple and straightforward. During acting, the actor network becomes it's own policy iteration algorithm, taking in a state and an action, and trying to map them to an even better action. Then, we iterate this over k steps where k is a hyperparameter above 1. We then train this algorithm by the usual DDPG Q loss and a special action computational compression loss, which attempts to reduce the number of computational steps required to reach the desired action.
